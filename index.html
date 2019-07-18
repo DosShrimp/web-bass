@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1，viewport-fit=cover" />
+  		<link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+      <script>
+      	function setup() {
+        	createCanvas(windowWidth, windowHeight);
+					osc = new p5.Oscillator('square');
+				}
+
+				function draw() {
+					background(232, 194, 255);
+					fill(216, 174, 106);
+					rect(width * 0.4190, 0, width * 0.166, height);
+					noStroke();
+					fill(255);
+					rect(width * 0.425, 0, 10.5, height);
+					rect(width * 0.475, 0, 8.5, height);
+					rect(width * 0.525, 0, 6.5, height);
+					rect(width * 0.575, 0, 4.5, height);
+					if (keyIsPressed) {
+						if (key=='z' || key=='x' || key=='c' || key=='v' || key=='b' || key=='n' || key=='m' || key==',' || key=='.' || key=='/' || key=='_'){
+							background(232, 194, 255);
+							fill(216, 174, 106);
+							rect(width * 0.4190, 0, width * 0.166, height);
+							noStroke();
+							fill(255);
+							rect(width * 0.475, 0, 8.5, height);
+							rect(width * 0.525, 0, 6.5, height);
+							rect(width * 0.575, 0, 4.5, height);
+							fill(255, 0, 0)
+							rect(width * 0.425 + random(-1, 1) , 0, 10.5, height);
+						}
+						if (key=='a' || key=='s' || key=='d' || key=='f' || key=='g' || key=='h' || key=='j' || key=='k' || key=='l' || key==';' || key==':'){
+							background(232, 194, 255);
+							fill(216, 174, 106);
+							rect(width * 0.4190, 0, width * 0.166, height);
+							noStroke();
+							fill(255);
+							rect(width * 0.425, 0, 10.5, height);
+							rect(width * 0.525, 0, 6.5, height);
+							rect(width * 0.575, 0, 4.5, height);
+							fill(255, 0, 0)
+							rect(width * 0.475 + random(-1, 1), 0, 8.5, height);
+						}
+						if (key=='q' || key=='w' || key=='e' || key=='r' || key=='t' || key=='y' || key=='u' || key=='i' || key=='o' || key=='p' || key=='@'){
+							background(232, 194, 255);
+							fill(216, 174, 106);
+							rect(width * 0.4190, 0, width * 0.166, height);
+							noStroke();
+							fill(255);
+							rect(width * 0.475, 0, 8.5, height);
+							rect(width * 0.425, 0, 10.5, height);
+							rect(width * 0.575, 0, 4.5, height);
+							fill(255, 0, 0)
+							rect(width * 0.525 + random(-1, 1), 0, 6.5, height);
+						}
+						if (key=='1' || key=='2' || key=='3' || key=='4' || key=='5' || key=='6' || key=='7' || key=='8' || key=='9' || key=='0' || key=='-'){
+							background(232, 194, 255);
+							fill(216, 174, 106);
+							rect(width * 0.4190, 0, width * 0.166, height);
+							noStroke();
+							fill(255);
+							rect(width * 0.475, 0, 8.5, height);
+							rect(width * 0.525, 0, 6.5, height);
+							rect(width * 0.425, 0, 10.5, height);
+							fill(255, 0, 0)
+							rect(width * 0.575 + random(-1, 1), 0, 4.5, height);
+						}
+					}
+					if (mouseIsPressed) {
+						background(232, 194, 255);
+						textSize(50);
+						textAlign(CENTER);
+						fill(255);
+						text('This is WEB BASS. Please type!', width/2, height/2);
+					}
+				}
+
+        function keyTyped() {
+					if (key=='z'){
+						osc.start();
+						osc.freq(midiToFreq(28));
+					}
+					if (key=='a'){
+						osc.start();
+						osc.freq(midiToFreq(33));
+					}
+					if (key=='q'){
+						osc.start();
+						osc.freq(midiToFreq(38));
+					}
+					if (key=='1'){
+						osc.start();
+						osc.freq(midiToFreq(43));
+					}
+
+//					１フレット
+					if (key=='x'){
+						osc.start();
+						osc.freq(midiToFreq(29));
+					}
+					if (key=='s'){
+						osc.start();
+						osc.freq(midiToFreq(34));
+					}
+					if (key=='w'){
+						osc.start();
+						osc.freq(midiToFreq(39));
+					}
+					if (key=='2'){
+						osc.start();
+						osc.freq(midiToFreq(44));
+					}
+
+//					２フレット
+					if (key=='c'){
+						osc.start();
+						osc.freq(midiToFreq(30));
+					}
+					if (key=='d'){
+						osc.start();
+						osc.freq(midiToFreq(35));
+					}
+					if (key=='e'){
+						osc.start();
+						osc.freq(midiToFreq(40));
+					}
+					if (key=='3'){
+						osc.start();
+						osc.freq(midiToFreq(45));
+					}
+
+//					３フレット
+					if (key=='v'){
+						osc.start();
+						osc.freq(midiToFreq(31));
+					}
+					if (key=='f'){
+						osc.start();
+						osc.freq(midiToFreq(36));
+					}
+					if (key=='r'){
+						osc.start();
+						osc.freq(midiToFreq(41));
+					}
+					if (key=='4'){ z
+						osc.start();
+						osc.freq(midiToFreq(46));
+					}
+
+//					４フレット
+					if (key=='b'){
+						osc.start();
+						osc.freq(midiToFreq(32));
+					}
+					if (key=='g'){
+						osc.start();
+						osc.freq(midiToFreq(37));
+					}
+					if (key=='t'){
+						osc.start();
+						osc.freq(midiToFreq(42));
+					}
+					if (key=='5'){
+						osc.start();
+						osc.freq(midiToFreq(47));
+					}
+
+//					５フレット
+					if (key=='n'){
+						osc.start();
+						osc.freq(midiToFreq(33));
+					}
+					if (key=='h'){
+						osc.start();
+						osc.freq(midiToFreq(38));
+					}
+					if (key=='y'){
+						osc.start();
+						osc.freq(midiToFreq(43));
+					}
+					if (key=='6'){
+						osc.start();
+						osc.freq(midiToFreq(48));
+					}
+
+//					６フレット
+					if (key=='m'){
+						osc.start();
+						osc.freq(midiToFreq(34));
+					}
+					if (key=='j'){
+						osc.start();
+						osc.freq(midiToFreq(39));
+					}
+					if (key=='u'){
+						osc.start();
+						osc.freq(midiToFreq(44));
+					}
+					if (key=='7'){
+						osc.start();
+						osc.freq(midiToFreq(49));
+					}
+
+//					７フレット
+					if (key==','){
+						osc.start();
+						osc.freq(midiToFreq(35));
+					}
+					if (key=='k'){
+						osc.start();
+						osc.freq(midiToFreq(40));
+					}
+					if (key=='i'){
+						osc.start();
+						osc.freq(midiToFreq(45));
+					}
+					if (key=='8'){
+						osc.start();
+						osc.freq(midiToFreq(50));
+					}
+
+//					８フレット
+					if (key=='.'){
+						osc.start();
+						osc.freq(midiToFreq(36));
+					}
+					if (key=='l'){
+						osc.start();
+						osc.freq(midiToFreq(41));
+					}
+					if (key=='o'){
+						osc.start();
+						osc.freq(midiToFreq(46));
+					}
+					if (key=='9'){
+						osc.start();
+						osc.freq(midiToFreq(51));
+					}
+
+//					９フレット
+					if (key=='/'){
+						osc.start();
+						osc.freq(midiToFreq(37));
+					}
+					if (key==';'){
+						osc.start();
+						osc.freq(midiToFreq(42));
+					}
+					if (key=='p'){
+						osc.start();
+						osc.freq(midiToFreq(47));
+					}
+					if (key=='0'){
+						osc.start();
+						osc.freq(midiToFreq(52));
+					}
+
+					//		10フレット
+					if (key=='_'){
+						osc.start();
+						osc.freq(midiToFreq(38));
+					}
+					if (key==':'){
+						osc.start();
+						osc.freq(midiToFreq(43));
+					}
+					if (key=='@'){
+						osc.start();
+						osc.freq(midiToFreq(48));
+					}
+					if (key=='-'){
+						osc.start();
+						osc.freq(midiToFreq(53));
+					}
+        }
+				function keyReleased() {
+					osc.stop();
+				}
+       </script>
+    </body>
+</html>
